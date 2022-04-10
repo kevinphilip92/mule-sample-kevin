@@ -1,0 +1,19 @@
+{
+	"TextlineValue": [{
+		"Name": "PUMP  REAGENT  SVC",
+		"Description": "PUMP  REAGENT  SVC",
+		"ProductShortText__c": "PUMP  REAGENT  SVC"
+	}],
+	"ProductCode": "05506760111",
+	"SVMXC__SM_External_ID__c": "05506760111",
+	"ProductNumber__c": "05506760111",
+	"SVMXC__Unit_Of_Measure__c": "PCE",
+	"BaseUnitOfMeasure__c": "PCE",
+	"CrossPlantMaterialStatus__c": "60",
+	"Product_Type__c": [{
+		"Product_Type__c": "Spare Part  general"
+	}],
+	"DMS_GPCH_DEFAULT": [{
+		"DMS_GPCH_DEFAULT": "GPCH-2059"
+	}]
+}

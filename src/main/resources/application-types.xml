@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="xml" format="xml">
+      <types:example format="xml" element="{http://roche.com/rd/GL/Canonicals/000162/ProductMaster/30}Product" location="examples/POSTINP.xml"/>
+    </types:type>
+    <types:type name="hu" format="json">
+      <types:shape format="weave" example="examples/sfjson.json"><![CDATA[%dw 2.0
+
+type hu = Array<{|  firstname: String,   lastname: String,   email: String,   mobile: String|}> {"example": "[{\\\"firstname\\\":\\\"obama\\\",\\\"lastname\\\":\\\"ji\\\",\\\"email\\\":\\\"obama@yahoo.com\\\",\\\"mobile\\\":\\\"136\\\"},{\\\"firstname\\\":\\\"asd\\\",\\\"lastname\\\":\\\"kv\\\",\\\"email\\\":\\\"asd@yahoo.com\\\",\\\"mobile\\\":\\\"456\\\"}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#a56bfa50-d406-42f7-8d0e-1298f0f7340e">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="xml"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
